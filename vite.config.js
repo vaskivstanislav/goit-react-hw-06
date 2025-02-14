@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
-  base: "/goit-react-hw-06/",
+  base: "./",
   plugins: [
     react(),
     visualizer({
