@@ -1,38 +1,34 @@
-import { Field, Form, Formik } from "formik";
-import styles from "./SearchBox.module.css";
-// import styles from "..SearchBox/SearchBox.module.css";
-import toast from "react-hot-toast";
+import React, { useCallback } from "react";
+import { useDispatch } from "react-redux";
+import s from "./SearchBox.module.css";
+import { changeFilter } from "../../redux/filtersSlice";
 
-const SearchBox = ({ onSubmit }) => {
-  const handleSubmit = (values, actions) => {
-    const formattedSearch = values.search.trim().toLowerCase();
-    if (!formattedSearch) {
-      toast.error("The search field cannot be empty!");
-      return;
-    }
-    onSubmit(formattedSearch);
-    actions.resetForm();
-  };
+const SearchBox = () => {
+  const dispatch = useDispatch();
+
+  const handleSearchUser = useCallback(
+    (event) => {
+      const value = event.target.value.trim().toLowerCase();
+      dispatch(changeFilter(value));
+    },
+    [dispatch]
+  );
 
   return (
-    <div className={styles.searchThumb}>
-      <Formik initialValues={{ search: "" }} onSubmit={handleSubmit}>
-        <Form>
-          <Field
-            className={styles.inputSearch}
-            type="text"
-            name="search"
-            autoComplete="off"
-            autoFocus
-            placeholder="Search films"
-          />
-          <button className={styles.btnSearch} type="submit">
-            Search
-          </button>
-        </Form>
-      </Formik>
+    <div className={s.serchWrap}>
+      <label htmlFor="search" className={s.label}>
+        Find contact by name
+      </label>
+      <input
+        id="search"
+        className={s.serchInput}
+        type="text"
+        placeholder="Type to search..."
+        onChange={handleSearchUser}
+        aria-label="Search contacts"
+      />
     </div>
   );
 };
 
-export default SearchBox;
+export default React.memo(SearchBox);

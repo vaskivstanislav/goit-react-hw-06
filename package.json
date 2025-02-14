@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-05",
+  "name": "goit-react-hw-06",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -10,38 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "classnames": "^2.5.1",
-    "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
+    "@reduxjs/toolkit": "^2.4.0",
     "formik": "^2.4.6",
-    "modern-normalize": "^3.0.1",
-    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hot-toast": "^2.4.1",
-    "react-icons": "^5.3.0",
-    "react-loader-spinner": "^6.1.6",
-    "react-loading-skeleton": "^3.5.0",
-    "react-modal": "^3.16.1",
-    "react-router-dom": "^7.1.5",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.15",
-    "yup": "^1.4.0"
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "yup": "^1.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@types/yup": "^0.29.14",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vite-plugin-imagemin": "^0.6.1"
+    "rollup-plugin-visualizer": "^5.12.0",
+    "vite": "^5.4.10"
   }
 }
