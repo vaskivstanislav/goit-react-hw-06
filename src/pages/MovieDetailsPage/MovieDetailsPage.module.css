@@ -1,0 +1,201 @@
+.movieDetails {
+    position: relative;
+    padding: 0 20px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movieDetailsThumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .btnLink {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px 18px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f6f6f6;
+    color: #1b1b1b;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btnLink:hover,
+  .btnLink:focus {
+    background-color: rgb(0, 70, 182);
+    color: #f6f6f6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movieDetailsSection {
+    margin-bottom: 35px;
+  }
+  
+  .movieDetailsImg {
+    margin-bottom: 20px;
+  }
+  
+  .movieDetailsTitle {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .movieDetailsTagline {
+    font-size: 22px;
+    line-height: 1.2;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .movieDetailsText {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #444;
+  }
+  
+  .movieDetailsScore {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .spanAccent {
+    font-weight: 700;
+    color: #2a3a75;
+  }
+  
+  .iconSpilled, .iconUpright {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .iconSpilled {
+    background-image: url("../../assets/img/spilled.svg");
+  }
+  
+  .iconUpright {
+    background-image: url("../../assets/img/upright.svg");
+  }
+  
+  .movieDetailsTitleFilm {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .movieDetailsGenresList {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .moreInfo {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-bottom: 25px;
+  }
+  
+  .moreInfoLinkActive {
+    background-color: rgb(0, 70, 182);
+    color: #f6f6f6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .movieDetailsThumb {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .btnLink {
+      width: 130px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .movieDetailsThumb {
+      gap: 25px;
+    }
+  
+    .movieDetailsTitle {
+      text-align: left;
+    }
+  
+    .forLaptop {
+      width: 750px;
+    }
+  }
+  
+  .videoPlayerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .movieDetailsTitleFilm {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .video {
+    width: 100%;
+    max-width: 800px; /* Максимальна ширина для великих екранів */
+    aspect-ratio: 16 / 9; /* Зберігає співвідношення сторін */
+    overflow: hidden;
+    border: 2px solid #ccc; /* Декоративна рамка */
+    border-radius: 8px; /* Закруглені кути */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  }
+  
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Адаптивність для маленьких екранів */
+  @media (max-width: 600px) {
+    .movieDetailsTitleFilm {
+      font-size: 20px; /* Зменшуємо розмір тексту */
+    }
+  
+    .video {
+      max-width: 100%; /* Використовуємо всю доступну ширину */
+      border: 1px solid #ccc; /* Тонша рамка */
+    }
+  }
+  
+  /* Адаптивність для середніх екранів */
+  @media (max-width: 992px) {
+    .video {
+      max-width: 90%; /* Плеєр займає 90% ширини контейнера */
+    }
+  }

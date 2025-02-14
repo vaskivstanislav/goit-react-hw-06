@@ -1,0 +1,61 @@
+.reviewItemTitle {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .reviewItemUserName {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  .reviewItemSpan {
+    font-weight: 700;
+    color: #3498db;
+  }
+  
+  .reviewItemDate {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: #95a5a6;
+  }
+  
+  .reviewItemContent {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.8;
+    color: #34495e;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  .skeletonAuthor {
+    margin-bottom: 10px;
+  }
+  
+  .skeletonUsername {
+    margin-bottom: 8px;
+  }
+  
+  .skeletonDate {
+    margin-bottom: 8px;
+  }
+  
+  .skeletonContent {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
